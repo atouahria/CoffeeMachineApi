@@ -1,0 +1,57 @@
+@CoffeeMachineApi_HostAddress = http://localhost:5041
+
+
+// Test Get All Beverages 
+GET {{CoffeeMachineApi_HostAddress}}/api/v1/beverages
+Accept: application/json
+
+###
+
+// Test Get By Id
+GET {{CoffeeMachineApi_HostAddress}}/api/v1/beverages/1
+Accept: application/json
+
+###
+
+// Not Found Test
+GET {{CoffeeMachineApi_HostAddress}}/api/v1/beverages/99
+Accept: application/json
+
+###
+
+GET {{CoffeeMachineApi_HostAddress}}/api/v1/beverages/getprice/1
+Accept: application/json
+
+###
+
+GET {{CoffeeMachineApi_HostAddress}}/api/v1/beverages/getprice/2
+Accept: application/json
+
+###
+
+GET {{CoffeeMachineApi_HostAddress}}/api/v1/beverages/getprice/3
+Accept: application/json
+
+###
+GET {{CoffeeMachineApi_HostAddress}}/api/v1/beverages/getprice/4
+Accept: application/json
+
+###
+GET {{CoffeeMachineApi_HostAddress}}/api/v1/beverages/getprice/5
+Accept: application/json
+
+###
+GET {{CoffeeMachineApi_HostAddress}}/api/v1/beverages/getprice/6
+Accept: application/json
+
+###
+GET {{CoffeeMachineApi_HostAddress}}/api/v1/beverages/getprice/7
+Accept: application/json
+
+
+
+###
+
+// Test Incorrect API Version
+GET {{CoffeeMachineApi_HostAddress}}/api/v2/beverages/1
+Accept: application/json
